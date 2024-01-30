@@ -1,2 +1,2 @@
 # question_answering
-Question Answering system using LLM
+Question Answering system using LLM and Langchain
