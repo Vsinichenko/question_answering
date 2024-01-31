@@ -24,4 +24,4 @@ document, maintaining factual consistency and not being completely made up
 best practices.
 
 
- export OPENAI_API_KEY="paste_your_key_here"
+ export OPENAI_API_KEY="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"
