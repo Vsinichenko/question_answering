@@ -1,3 +1,10 @@
 langchain==0.1.4
 openai==1.10.0
 jupyter
+notebook
+jupyterlab
+langchain-community
+langchainhub
+langchain-openai
+chromadb
+bs4
