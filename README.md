@@ -1,5 +1,7 @@
 # Question Answering System
-Question Answering system using LLM and Langchain
+This is a Question Answering system using LLM and Langchain.
+
+The application answers questions based on the provided text.
 
 ### How to use the Tool
 First, go to https://help.openai.com/en/articles/4936850-where-do-i-find-my-api-key and obtain the OpenAI API key.
