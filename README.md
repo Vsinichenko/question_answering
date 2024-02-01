@@ -10,7 +10,7 @@ In terminal, run:
 
 Then, run `python main.py`
 
-To use your custom example, create a folder inside `examples` and organize is similar to the `NFLseason` sample. You may provide multiple sources.
+To use your custom example, create a folder inside `examples` and organize is similar to the `NFLseason` sample. You may provide multiple sources. Different languages are supported.
 
 Then, go to `config.py` and modify the folder name. 
 
