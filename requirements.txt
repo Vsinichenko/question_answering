@@ -1,6 +1,7 @@
 langchain==0.1.4
-openai==1.10.0
 langchain-community==0.0.16
 langchainhub==0.1.14
 langchain-openai==0.0.5
 chromadb==0.4.22
+unstructured==0.12.3
+pwinput==1.0.3

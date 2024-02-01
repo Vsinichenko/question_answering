@@ -1,0 +1,6 @@
+[tool.black]
+include = '^.*\.py$'
+line-length = 120
+exclude = '''
+  | venv
+'''
