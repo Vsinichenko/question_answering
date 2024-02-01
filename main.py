@@ -1,13 +1,9 @@
-import pwinput
-import os
-from langchain import hub
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_community.vectorstores import Chroma
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 
-# noinspection PyUnresolvedReferences
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate, PromptTemplate
 
@@ -17,9 +13,6 @@ from config import example_directory
 class QuestionAnsweringSystem:
 
     def __enter__(self):
-        os.environ["OPENAI_API_KEY"] = pwinput.pwinput(
-            "Enter OpenAI API key, " "see https://help.openai.com/en/articles/4936850-where-do-i-find-my-api-key \n"
-        )
         print()
         return self
 
@@ -64,16 +57,8 @@ class QuestionAnsweringSystem:
             | StrOutputParser()
         )
 
-        # print(
-        #     rag_chain.invoke(
-        #         "Which teams played in the NFL Kickoff Game to begin the 2022 season, and what was the result?"
-        #     )
-        # )
-
-        questions = ["Hello, how are you doing?"]
         questions_data = open(f"examples/{example_directory}/questions.txt").read()
-        questions_provided = questions_data.split("\n")
-        questions.extend(questions_provided)
+        questions = questions_data.split("\n")
 
         for q in questions:
             print(f"QUESTION: {q}")
